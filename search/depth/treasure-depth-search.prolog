@@ -53,7 +53,7 @@ addFinalElement(X, [], [X]).
 addFinalElement(X, [H|T], [H|R]):-addFinalElement(X, T, R).
 
 /* Step 3:
-   Establish search by amplitude engin to get sword. */
+   Establish search by depth engine to get treasure. */
 search(Solution):-search(1, [1], Solution).
 
 /* Step 3.1:

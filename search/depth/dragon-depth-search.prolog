@@ -54,7 +54,7 @@ concatElement([], L, L).
 concatElement([X|T], L, [X|C]):-concatElement(T, L, C).
 
 /* Step 3:
-   Establish search by amplitude engin to get sword. */
+   Establish search by depth engine to get sword. */
 search(Solution):-swordSearch(1, [1], Solution).
 
 /* Step 3.1:

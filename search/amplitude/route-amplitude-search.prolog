@@ -54,8 +54,8 @@ addFinalElement(X, [H|T], [H|R]):-addFinalElement(X, T, R).
 
 /* Extra:
    Define concatElement function. */
-concatElement([],L,L).
-concatElement([X|T],L,[X|C]):-concatElement(T,L,C).
+concatElement([], L, L).
+concatElement([X|T], L, [X|C]):-concatElement(T, L, C).
 
 /* Step 3:
    Establish search by amplitude engine. */
