@@ -75,7 +75,6 @@ extendRoute(_, _, [], []):-!.
 /* Step 3.2:
    Recursion (recursive case). */
 extendRoute(ActualState, Route, [_|TSuccessor], [AuxRoute|TSolution]):-
-
 /* Step 3.2.1:
    Update successors route list accumulator. */
 addFinalElement(ActualState, Route, AuxRoute),
